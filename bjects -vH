@@ -1,0 +1,93 @@
+[33mcommit 3714600c53727aa5ea66f7e98a142b833f851631[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Mikhail Turilov <turilovm@gmail.com>
+Date:   Thu Jan 16 22:20:24 2025 +0300
+
+    Add large files with LFS
+
+ .gitattributes               |      4 [32m+[m
+ Analysis/data                |    Bin [31m122910664[m -> [32m134[m bytes
+ Analysis/fact_table.csv      | 483048 [32m+[m[31m---------------------------------------[m
+ Analysis/fact_table_corr.csv | 483024 [32m+[m[31m--------------------------------------[m
+ cafe.db                      |    Bin [31m235180032[m -> [32m134[m bytes
+ 5 files changed, 10 insertions(+), 966066 deletions(-)
+
+[33mcommit 9ce26ec2382a4bc9cf7e3280127e87a0d0549db9[m
+Author: Mikhail Turilov <turilovm@gmail.com>
+Date:   Thu Jan 16 22:11:19 2025 +0300
+
+    Initial commit
+
+ .gitignore                   |   4 [32m+[m
+ Analysis/Sales.pbix          | Bin [31m19400084[m -> [32m9706126[m bytes
+ Analysis/anomaly_table.csv   |  25 [32m++[m
+ Analysis/fact_table_corr.csv |   1 [31m-[m
+ Analysis/sales.ipynb         | 840 [32m++++++++[m[31m-----------------------------------[m
+ 5 files changed, 184 insertions(+), 686 deletions(-)
+
+[33mcommit 94eaa0acbdd15d7d11bc3b4a3a8852d3ad87a5e7[m
+Author: Mikhail Turilov <turilovm@gmail.com>
+Date:   Wed Jan 15 21:35:35 2025 +0300
+
+    Initial commit
+
+ .idea/.gitignore                                   |      3 [32m+[m
+ .idea/Cafe.iml                                     |      8 [32m+[m
+ .idea/dbnavigator.xml                              |    548 [32m+[m
+ .idea/inspectionProfiles/Project_Default.xml       |     24 [32m+[m
+ .idea/inspectionProfiles/profiles_settings.xml     |      6 [32m+[m
+ .idea/misc.xml                                     |      7 [32m+[m
+ .idea/modules.xml                                  |      8 [32m+[m
+ 6_month.csv                                        |  57484 [32m+++[m
+ ABC_cafe.ipynb                                     |    527 [32m+[m
+ Analysis/Sales.pbix                                |    Bin [31m0[m -> [32m19400084[m bytes
+ Analysis/anomaly_price.ipynb                       |   1284 [32m+[m
+ Analysis/data                                      |    Bin [31m0[m -> [32m122910664[m bytes
+ Analysis/fact_table.csv                            | 483045 [32m++++++++++++++++++[m
+ Analysis/fact_table_corr.csv                       | 483022 [32m+++++++++++++++++[m
+ Analysis/goods_table.csv                           |   1055 [32m+[m
+ Analysis/sales.ipynb                               |   2669 [32m+[m
+ Analysis/table_hour.csv                            |     14 [32m+[m
+ Analysis/table_powerbi.ipynb                       |    483 [32m+[m
+ Analysis/time_eat.csv                              |      6 [32m+[m
+ Analysis/wtf.csv                                   |      8 [32m+[m
+ Gerop 10 mnth.xlsx                                 |    Bin [31m0[m -> [32m53819[m bytes
+ Group.csv                                          |    794 [32m+[m
+ Group_Good.xlsx                                    |    Bin [31m0[m -> [32m69373[m bytes
+ Price_avg.csv                                      |   7751 [32m+[m
+ __pycache__/download_files.cpython-311.pyc         |    Bin [31m0[m -> [32m3947[m bytes
+ avg_price/avg_price_all.xlsx                       |    Bin [31m0[m -> [32m159517[m bytes
+ cafe.db                                            |    Bin [31m0[m -> [32m235180032[m bytes
+ costs.py                                           |     37 [32m+[m
+ df_all                                             |    Bin [31m0[m -> [32m101423968[m bytes
+ download_files.py                                  |     66 [32m+[m
+ files/26400890__2024__01__01__2024__01__14.csv     |   9217 [32m+[m
+ files/26400919__2024__01__15__2024__01__28.csv     |  25113 [32m+[m
+ files/26400942__2024__01__29__2024__01__31.csv     |   7055 [32m+[m
+ files/26400943__2024__02__01__2024__02__11.csv     |  17233 [32m+[m
+ files/26400945__2024__02__12__2024__02__25.csv     |  21206 [32m+[m
+ files/26400948__2024__02__26__2024__02__29.csv     |  10151 [32m+[m
+ files/26400949__2024__03__01__2024__03__10.csv     |  11536 [32m+[m
+ files/26400954__2024__03__11__2024__03__24.csv     |  24629 [32m+[m
+ files/26400976__2024__03__25__2024__03__31.csv     |  12477 [32m+[m
+ files/26400977__2024__04__01__2024__04__07.csv     |  12563 [32m+[m
+ files/26400984__2024__04__08__2024__04__21.csv     |  24417 [32m+[m
+ files/26400989__2024__04__22__2024__04__30.csv     |  14318 [32m+[m
+ files/26400990__2024__05__01__2024__05__05.csv     |   4560 [32m+[m
+ files/26400994__2024__05__06__2024__05__19.csv     |  18535 [32m+[m
+ files/26400998__2024__05__20__2024__05__31.csv     |  24157 [32m+[m
+ files/26401006__2024__06__03__2024__06__16.csv     |  19104 [32m+[m
+ files/26401013__2024__06__17__2024__06__30.csv     |  21364 [32m+[m
+ group.py                                           |     10 [32m+[m
+ load_avg_price.py                                  |     16 [32m+[m
+ ms-toolsai.jupyter-2024.10.0@win32-x64.vsix        |    Bin [31m0[m -> [32m7193679[m bytes
+ pandas_train.ipynb                                 |   1983 [32m+[m
+ read_xlsx.py                                       |     28 [32m+[m
+ real_download.py                                   |     37 [32m+[m
+ ...01 01.01.2024 \320\277\320\276 31.01.2024.xlsx" |    Bin [31m0[m -> [32m180369[m bytes
+ ...01 01.02.2024 \320\277\320\276 29.02.2024.xlsx" |    Bin [31m0[m -> [32m150645[m bytes
+ ...01 01.03.2024 \320\277\320\276 31.03.2024.xlsx" |    Bin [31m0[m -> [32m181939[m bytes
+ ...01 01.04.2024 \320\277\320\276 30.04.2024.xlsx" |    Bin [31m0[m -> [32m199546[m bytes
+ ...01 01.05.2024 \320\277\320\276 31.05.2024.xlsx" |    Bin [31m0[m -> [32m175939[m bytes
+ ...01 01.06.2024 \320\277\320\276 30.06.2024.xlsx" |    Bin [31m0[m -> [32m163850[m bytes
+ transform_data.ipynb                               |   1302 [32m+[m
+ 60 files changed, 1319860 insertions(+)
